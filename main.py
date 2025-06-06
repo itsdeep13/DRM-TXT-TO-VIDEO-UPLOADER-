@@ -990,7 +990,7 @@ async def handle_broadcast(client, message: Message):
 
         await message.reply("⚡ Do you want to send this message to all users?", reply_markup=preview_buttons)
     else:
-        await message.reply("❗ Reply to a message with text/photo/video to broadcast.\nYou can also add buttons like this:\n\nCaption here || [[[\"Join\",\https://t.me/SIMPLE_THAKUR"\"]]]")
+        await message.reply("❗ Reply to a message with text/photo/video to broadcast.\nYou can also add buttons like this:\n\nCaption here || [[[\"Join\",\"https://t.me/SIMPLE_THAKUR\"]]]")
 
 @bot.on_callback_query(filters.regex("broadcast_"))
 async def confirm_broadcast(client, query: CallbackQuery):
